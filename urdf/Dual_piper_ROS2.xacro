@@ -179,14 +179,14 @@
     <inertia ixx="0.000103" iyy="4.3e-05" izz="7.3e-05" ixy="1.3e-05" iyz="-3e-06" ixz="1e-06"/>
   </inertial>
   <visual>
-    <origin xyz="0.438169 -0.790481 0.810851" rpy="0 0 0"/>
+    <origin xyz="${-0.22209+0.438169} ${0.395033-0.790481} ${-0.406013+0.810851}" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find Dual_piper_ROS2_description)/meshes/piper_right_L_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.438169 -0.790481 0.810851" rpy="0 0 0"/>
+    <origin xyz="${-0.22209+0.438169} ${0.395033-0.790481} ${-0.406013+0.810851}" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find Dual_piper_ROS2_description)/meshes/piper_right_L_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -200,14 +200,14 @@
     <inertia ixx="0.000104" iyy="4.3e-05" izz="7.3e-05" ixy="-1.1e-05" iyz="3e-06" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="0.438169 -0.790481 0.810851" rpy="0 0 0"/>
+    <origin xyz="${-0.22209+0.438169} ${0.395033-0.790481} ${-0.406013+0.810851}" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find Dual_piper_ROS2_description)/meshes/piper_left_L_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="0.438169 -0.790481 0.810851" rpy="0 0 0"/>
+    <origin xyz="${-0.22209+0.438169} ${0.395033-0.790481} ${-0.406013+0.810851}" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find Dual_piper_ROS2_description)/meshes/piper_left_L_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -368,14 +368,14 @@
     <inertia ixx="0.000103" iyy="4.3e-05" izz="7.3e-05" ixy="1.3e-05" iyz="-3e-06" ixz="1e-06"/>
   </inertial>
   <visual>
-    <origin xyz="-0.358864 -0.806368 0.810912" rpy="0 0 0"/>
+    <origin xyz="${0.176294-0.358864} ${0.41092-0.806368} ${-0.406074+0.810912}" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find Dual_piper_ROS2_description)/meshes/piper_left_R_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.358864 -0.806368 0.810912" rpy="0 0 0"/>
+    <origin xyz="${0.176294-0.358864} ${0.41092-0.806368} ${-0.406074+0.810912}" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find Dual_piper_ROS2_description)/meshes/piper_left_R_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -389,14 +389,14 @@
     <inertia ixx="0.000104" iyy="4.3e-05" izz="7.3e-05" ixy="-1.1e-05" iyz="3e-06" ixz="0.0"/>
   </inertial>
   <visual>
-    <origin xyz="-0.358864 -0.806368 0.810912" rpy="0 0 0"/>
+    <origin xyz="${0.176294-0.358864} ${0.41092-0.806368} ${-0.406074+0.810912}" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find Dual_piper_ROS2_description)/meshes/piper_right_R_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
-    <origin xyz="-0.358864 -0.806368 0.810912" rpy="0 0 0"/>
+    <origin xyz="${0.176294-0.358864} ${0.41092-0.806368} ${-0.406074+0.810912}" rpy="0 0 0"/>
     <geometry>
       <mesh filename="file://$(find Dual_piper_ROS2_description)/meshes/piper_right_R_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
@@ -458,7 +458,7 @@
 </joint>
 
 <joint name="Slider 8" type="prismatic">
-  <origin xyz="-0.22209 0.395033 -0.406013" rpy="0 0 0"/>
+  <origin xyz="${0} ${0} ${0}" rpy="0 0 0"/>
   <parent link="piper_hand_L_1"/>
   <child link="piper_right_L_1"/>
   <axis xyz="0.999891 0.014774 -4.3e-05"/>
@@ -466,7 +466,7 @@
 </joint>
 
 <joint name="Slider 9" type="prismatic">
-  <origin xyz="-0.22209 0.395033 -0.406013" rpy="0 0 0"/>
+  <origin xyz="${0} ${0} ${0}" rpy="0 0 0"/>
   <parent link="piper_hand_L_1"/>
   <child link="piper_left_L_1"/>
   <axis xyz="-0.999891 -0.014774 4.3e-05"/>
@@ -528,7 +528,7 @@
 </joint>
 
 <joint name="Slider 17" type="prismatic">
-  <origin xyz="0.176294 0.41092 -0.406074" rpy="0 0 0"/>
+  <origin xyz="${0} ${0} ${0}" rpy="0 0 0"/>
   <parent link="piper_hand_R_1"/>
   <child link="piper_left_R_1"/>
   <axis xyz="0.999891 0.014774 -4.3e-05"/>
@@ -536,7 +536,7 @@
 </joint>
 
 <joint name="Slider 18" type="prismatic">
-  <origin xyz="0.176294 0.41092 -0.406074" rpy="0 0 0"/>
+  <origin xyz="${0} ${0} ${0}" rpy="0 0 0"/>
   <parent link="piper_hand_R_1"/>
   <child link="piper_right_R_1"/>
   <axis xyz="-0.999891 -0.014774 4.3e-05"/>
